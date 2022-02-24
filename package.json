@@ -1,0 +1,21 @@
+{
+  "name": "fivemplayerbot",
+  "version": "1.0.0",
+  "description": "Show players/max players as status",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "aa"
+  },
+  "keywords": [
+    "Fivem",
+    "Player Bot",
+    "Discord Player Bot",
+    "FiveM Player Bot"
+  ],
+  "author": "Ezague#6012",
+  "license": "ISC"
+}
