@@ -1,7 +1,7 @@
 {
-    "cfxip": "",
+    "cfxip": "DINCFXIP",
     "activity": {
         "status": "dnd",
-        "type": "watching"
+        "type": "WATCHING"
     }
 }

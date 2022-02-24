@@ -17,5 +17,10 @@
     "FiveM Player Bot"
   ],
   "author": "Ezague#6012",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "request": "^2.88.2"
+  }
 }
