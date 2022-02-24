@@ -12,4 +12,4 @@ Derefter åbner du FØRST install.bat, og DEREFTER start.bat filen.
 Husk at du SKAL have node installeret for at denne bot virker! - https://nodejs.org/en/
 
 
---Ezague#6012 - Sh4dow#8080
+//Ezague#6012 - Sh4dow#8080
