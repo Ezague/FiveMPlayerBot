@@ -43,8 +43,8 @@ client.on('ready', () => {
         });
     }
 
-    // Opdater bottens status hver 5 sekunder
-    setInterval(updatePlayerCount, 5000);
+    // Opdaterer bottens status hvert minut
+    setInterval(updatePlayerCount, 60000);
 });
 
 client.login(process.env.DISCORD_TOKEN);
