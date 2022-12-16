@@ -1,6 +1,6 @@
 require('dotenv').config();
-const { Client } = require('discord.js');
-const client = new Client({ intents: ['GUILD_PRESENCES'] })
+const { Client, IntentsBitField, ActivityType } = require('discord.js');
+const client = new Client({ intents: [IntentsBitField.Flags.GuildPresences] })
 const config = require('./config.json');
 const request = require('request');
 
@@ -24,7 +24,7 @@ client.on('ready', () => {
                     status: config.activity.status,
                     activities: [{
                         name: 'Server Offline',
-                        type: config.activity.type
+                        type: ActivityType.Listening
                     }]
                 })
                 return
@@ -37,7 +37,7 @@ client.on('ready', () => {
                 status: config.activity.status,
                 activities: [{
                     name: `${spillere}/${maxPlayers} online`,
-                    type: config.activity.type
+                    type: ActivityType.Watching
                 }]
             })
         });
@@ -45,6 +45,10 @@ client.on('ready', () => {
 
     // Opdaterer bottens status hvert minut
     setInterval(updatePlayerCount, 60000);
+
+    // Opdaterer statusen med det samme
+    updatePlayerCount();
+
 });
 
 client.login(process.env.DISCORD_TOKEN);
